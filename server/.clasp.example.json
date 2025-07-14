@@ -1,6 +1,6 @@
 {
   "scriptId": "SCRIPT_ID",
-  "rootDir": "./server",
+  "rootDir": ".",
   "scriptExtensions": [
     ".js",
     ".gs"
