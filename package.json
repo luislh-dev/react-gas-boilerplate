@@ -1,0 +1,39 @@
+{
+  "name": "react-gas-boilerplate",
+  "description": "React 19 + TypeScript + Vite boilerplate for Google Apps Script deployment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "deploy": "pnpm run build && node scripts/deploy-apps-script.js",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "clasp:push": "cd server && clasp push",
+    "clasp:pull": "cd server && clasp pull",
+    "clasp:open": "cd server && clasp open-script",
+    "clasp:webapp": "cd server && clasp open-web-app",
+    "clasp:deployments": "cd server && clasp list-deployments",
+    "clasp:deploy": "cd server && clasp deploy",
+    "clasp:status": "cd server && clasp status"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.4"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+}
